@@ -317,7 +317,10 @@
     margin-bottom: 23px;
     bottom: 38px;
 }
-.contact-form-content input::placeholder{
+.contact-form-content input:focus{
+    outline: none;
+}
+.contact-form-content input::placeholder, ..contact-form-content input::-moz-placeholder{
     font-family: Stem, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -351,7 +354,7 @@
 footer{
     background: #F3F3F3;
     padding-top: 50px;
-    padding-bottom: 68px;
+    height: 170px;
 }
 .footer-links{
     justify-content: space-around;
