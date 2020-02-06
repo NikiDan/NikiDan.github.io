@@ -320,7 +320,7 @@
 .contact-form-content input:focus{
     outline: none;
 }
-.contact-form-content input::placeholder, ..contact-form-content input::-moz-placeholder{
+.contact-form-content input::placeholder, .contact-form-content input::-moz-placeholder{
     font-family: Stem, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -387,3 +387,8 @@ footer{
     position: relative;
     right: 117px;
 }
+/*@media only screen and (max-width : 1350px) {*/
+/*    .middle-img{*/
+/*        display: none;*/
+/*    }*/
+/*}*/
