@@ -325,9 +325,6 @@
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.02em;
     color: #768290;
 }
@@ -387,8 +384,47 @@ footer{
     position: relative;
     right: 117px;
 }
-/*@media only screen and (max-width : 1350px) {*/
-/*    .middle-img{*/
-/*        display: none;*/
-/*    }*/
-/*}*/
+@media screen and (max-width : 1350px) {
+    .middle-img{
+        display: none;
+    }
+    .contact-flower {
+        display: none;
+    }
+    .contact-inf{
+        padding-top: 157px;
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width : 1270px){
+    .top-background {
+         background: #F3F3F3;
+    }
+    .policy-text{
+        right: 60px;
+    }
+}
+@media screen and (max-width : 1194px){
+    .nav-links{
+        display: flex;
+    }
+}
+@media screen and (max-width : 1181px){
+    .about{
+        width: 50px;
+    }
+}
+@media screen and (max-width : 1146px){
+    .policy-text{
+        right: 0;
+    }
+    .content-start{
+        justify-content: center;
+    }
+}
+@media screen and (max-width : 1040px){
+    .socials{
+        display: flex;
+        justify-content: center;
+    }
+}
