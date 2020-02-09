@@ -1,7 +1,7 @@
 * {
-     margin: 0;
-     font-family: Stem, sans-serif;
- }
+    margin: 0;
+    font-family: Stem, sans-serif;
+}
 
 body, .number-page {
     background: #F3F3F3;
@@ -78,12 +78,12 @@ body, .number-page {
 .main-container {
     justify-content: space-between;
     flex-direction: row;
+    padding: 0 147px 0 150px;
 }
 
 .categories {
     flex-direction: column;
     position: relative;
-    left: 148px;
 }
 
 .categories-title {
@@ -104,7 +104,7 @@ body, .number-page {
     width: 262px;
     height: 41px;
     background: #FFFFFF;
-    border-radius: 100px;
+    border-radius: 24px;
     border: none;
     margin-bottom: 18px;
     flex-direction: row;
@@ -161,7 +161,7 @@ body, .number-page {
     align-items: center;
     height: 41px;
     background: #FFFFFF;
-    border-radius: 100px;
+    border-radius: 24px;
     border: none;
     width: 262px;
 }
@@ -217,8 +217,8 @@ body, .number-page {
 
 .offers {
     flex-direction: column;
-    width: 54%;
-    padding-right: 150px;
+    width: 100%;
+    margin-left: 103px;
 }
 
 .filters {
@@ -227,7 +227,7 @@ body, .number-page {
 }
 
 .filter-selected {
-    border-radius: 100px;
+    border-radius: 24px;
     border: 1px solid #768290;
     box-sizing: border-box;
     background: #F3F3F3;
@@ -241,7 +241,6 @@ body, .number-page {
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    border-radius: 100px;
     cursor: pointer;
 }
 
@@ -378,13 +377,13 @@ body, .number-page {
     border: none;
 }
 
-.first-page {
+.current-page {
     border: 1px solid #768290;
     box-sizing: border-box;
-    border-radius: 100%;
+    border-radius: 50%;
     width: 28px;
     height: 28px;
-    padding-left: 7px;
+    padding-left: 7.5px;
     padding-top: 2.5px;
 }
 
@@ -446,6 +445,12 @@ footer {
     }
 }
 
+@media screen and (max-width: 1320px){
+    .offers{
+        margin-left: 52px;
+    }
+}
+
 @media screen and (max-width: 1300px) {
     .catalog {
         padding-left: 67px;
@@ -462,8 +467,12 @@ footer {
         padding-right: 0;
     }
 
-    .catalog-title, .categories {
+    .catalog-title {
         left: 50px;
+    }
+
+    .main-container{
+        padding: 0 150px 0 53px;
     }
 
     .head-nav-content {
