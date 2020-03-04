@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="UTF-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" charset="UTF-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"
+            charset="UTF-8"></script>
+    <title>LoginForm</title>
+</head>
+<body>
+<div class="background">
+    <img src="img/Ozesko2.jpg" alt="Background" class="background-img">
+
+    <form action="../HomePage/index.html" class="login-form">
+
+        <img src="img/Logo.png" alt="Logo" class="logoTitle">
+
+        <h1>Образовательный портал</h1>
+
+        <div class="txtb">
+            <input type="text">
+            <span data-placeholder="Имя пользователя"></span>
+        </div>
+
+        <div class="txtb">
+            <input type="password">
+            <span data-placeholder="Пароль"></span>
+        </div>
+
+<!--        <div>-->
+        <input type="submit" class="logbtn" value="Вход" >
+<!--            <a href="../HomePage/index.html"></a>-->
+<!--        </div>-->
+
+        <div class="bottom-text">
+            Забыли пароль? <a href="#" class="link">Вам сюда </a>
+        </div>
+
+        <div class="testPicture"></div>
+    </form>
+
+    <!--<img src="img/Satana.png" alt="Satana" class="testPicture">-->
+</div>
+<script type="text/javascript">
+    $(".txtb input").on("focus", function () {
+        $(this).addClass("focus");
+    });
+    $(".txtb input").on("blur", function () {
+        if ($(this).val() == "")
+            $(this).removeClass("focus");
+    });
+</script>
+<script>
+    $(".background-img").ripples({
+        resolution: 256,
+        perturbance: 0.04,
+    });
+</script>
+</body>
+</html>
