@@ -18,7 +18,7 @@ a{
 .background-img{
     filter: blur(1.5rem) brightness(0.7);
     width: 100%;
-    height: 100vh;
+    height: 99.6vh;
     outline: solid 30px;
 
 }
@@ -109,3 +109,22 @@ a{
     position: relative;
     left: 90px;
 }
+@media screen and (max-height:875px){
+
+  .background-img {
+    height: 99vh;
+  }
+
+}
+@media screen and (max-width: 480px){
+
+  .background-img {
+    height: 98vh;
+  }
+  
+}
+@media screen and (max-width: 360px){
+
+  .background-img {
+    height: 97vh;
+  }
