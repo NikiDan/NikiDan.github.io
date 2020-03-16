@@ -4,7 +4,7 @@ $font-secondary: 'Roboto Slab', serif;
 
 
 // Overrides
-$grid-gutter-width: 40px !default; 
+$grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
@@ -55,16 +55,16 @@ $form-group-margin-bottom:       30px !default;
           border-radius: $radius;
 }
 @mixin flex() {
-	display: -webkit-box;      
-  	display: -moz-box;         
-  	display: -ms-flexbox;      
-  	display: -webkit-flex;     
-  	display: flex;             
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
 }
 @mixin flexwrap() {
 	flex-wrap: wrap;
-	-webkit-flex-wrap: wrap; 
-	-moz-flex-wrap: wrap; 
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
 }
 
 @font-face {
@@ -79,7 +79,7 @@ $form-group-margin-bottom:       30px !default;
 }
 
 @mixin icomoon() {
-	
+
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -91,10 +91,10 @@ $form-group-margin-bottom:       30px !default;
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	
+
 }
 
-// Import 
+// Import
 @import 'bootstrap/mixins';
 @import 'bootstrap/variables';
 
@@ -103,7 +103,7 @@ $form-group-margin-bottom:       30px !default;
 
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *
 * ======================================================= */
 
@@ -122,9 +122,9 @@ body {
 	height: 100%;
 	@include transition(.5s);
 	.offcanvas & {
-		overflow: hidden;	
+		overflow: hidden;
 		position: absolute;
-		
+
 		&:after {
 			@include transition(2s);
 			position: absolute;
@@ -298,7 +298,7 @@ h1, h2, h3, h4, h5, h6, figure {
 						border-width: 8px;
 						margin-left: -8px;
 					}
-					
+
 					li {
 						display: block;
 						margin-bottom: 7px;
@@ -372,7 +372,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 	.flexslider {
 		border: none;
-		
+
 		z-index: 1;
 		margin-bottom: 0;
 
@@ -455,7 +455,7 @@ h1, h2, h3, h4, h5, h6, figure {
 					}
 				}
 				.heading-section{
-					
+
 				}
 				.btn {
 					padding: 18px 30px !important;
@@ -650,7 +650,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			border: 2px solid rgba($brand-black,.8) !important;
 			background: transparent;
 			color: rgba($brand-black,.8) !important;
-			font-size: 12px;			
+			font-size: 12px;
 			text-transform: uppercase;
 			font-weight: 700;
 			letter-spacing: 1px;
@@ -710,7 +710,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			}
 			&.address {
 				&:before {
-					font-size: 30px;	
+					font-size: 30px;
 					content: "\e9dc";
 				}
 			}
@@ -817,7 +817,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			@media screen and (max-width: $screen-sm){
 				width: 85%;
 			}
-			
+
 		}
 
 	}
@@ -1170,8 +1170,8 @@ h1, h2, h3, h4, h5, h6, figure {
 				lett: 0;
 				margin-left: -125px
 			}
-			&:after{	
-				right: 0; 
+			&:after{
+				right: 0;
 				margin-right: -110px
 			}
 		}
@@ -1209,7 +1209,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 	.fh5co-footer-links {
 		padding: 0;
-		margin: 0;	
+		margin: 0;
 		li {
 			padding: 0;
 			margin: 0;
@@ -1365,7 +1365,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			text-decoration: none;
 			outline: none;
 		}
-	}	
+	}
 }
 
 
