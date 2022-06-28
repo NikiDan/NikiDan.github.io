@@ -1,16 +1,3 @@
-/*.Background{
-    background: url("img/MainBackground.png");
-    height: 5165px;
-    width: 100%;
-}*/
-/*::-webkit-scrollbar {
-    display: none;
-}
-body {
-    background: url("img/default.png");
-}*/
-
-/*header*/
 .Background1{
     background-image: url("img/BackgroundHead.png");
     width: 100%;
@@ -155,6 +142,7 @@ main .name{
     width: 271px;
     height: 45px;
     border-width: 1px;
+    border: none;
 }
 
 .button1{
@@ -171,7 +159,6 @@ main .name{
     background-color: #88889a;
     margin-right: 24px;
     position: relative;
-    /*left: 25px;*/
 }
 
 .input_phone{
@@ -183,9 +170,10 @@ button {
     background-color: #ca0041;
     width:  300px;
     height: 50px;
-    border-radius: 50px;
+    border-radius: 25px;
     border: none;
     text-transform: uppercase;
+    padding-top: 12.5px;
 }
 
 .data_input input::-webkit-input-placeholder{
@@ -227,17 +215,7 @@ button {
     justify-content: space-between;
     margin-top: 65px;
 
-    /*генерирует flex-контейнер уровня блока*/
-    /*display: -webkit-flex;*/
-    /*display: flex;*/
-    /*justify-content: flex-start*/
 }
-/*.flex-container1{*/
-    /*!*генерирует flex-контейнер уровня строки*!*/
-    /*display: -webkit-inline-flex;*/
-    /*display: inline-flex;*/
-    /*justify-content: flex-start*/
-/*}*/
 
 .flex-container-midle{
     width: 100%;
@@ -299,15 +277,6 @@ button {
     justify-content: center;
     padding: 0px 0 80px 0;
 }
-
-/*.button_usage{*/
-    /*margin-top: 81px;*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*font-size: 16pt;*/
-    /*color: #fff;*/
-    /*letter-spacing: 1px;*/
-/*}*/
 
 .table_title{
     display:flex;
@@ -602,12 +571,6 @@ button {
     line-height: 19px;
 }
 
-/*.big_vatc{*/
-    /*margin: 0 0 0 127px;*/
-    /*width: 300px;*/
-    /*height: 300px;*/
-/*}*/
-
 .vatc{
     margin: 9px 0 0 0;
     letter-spacing: 1.188px;
@@ -661,12 +624,6 @@ button {
     letter-spacing: 0.5px;
     line-height: 19px;
 }
-
-/*.big_integration{*/
-    /*margin: -14px 564px 0px 0px;*/
-    /*width: 300px;*/
-    /*height: 300px;*/
-/*}*/
 
 .integration{
     margin: 8px 0 0 0;
@@ -739,6 +696,7 @@ button {
     width: 271px;
     height: 45px;
     border-width: 1px;
+    border: none;
 }
 
 
@@ -1176,11 +1134,3 @@ a {
         width: 60%;
     }
 }
-
-
-
-
-
-
-
-
