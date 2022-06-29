@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TestTask</title>
+    <link rel="stylesheet" href="styleRectangle.css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+    <body>
+        <div class="main-rectangle main"id="main">
+            <div class="cap-rectangle cap">
+                    <button class="close cap-btn" type="text" id="close"></button>
+                    <button class="hide-content cap-btn hide-rectangle" id="hide"></button>
+                    <span class="title-name-rectangle title-span"><span class="letter text">п</span>лан уничтожения пирожков</span>
+            </div>
+            <div class="content-rectangle content" id="content-rectangle">
+            <div class="found-rectangle found" id="found-rectangle">
+                <div class="found-field-rectangle found-field">
+                    <div class="field-rectangle field">
+                        <label class="filling-rectangle text filling" id="filling-rectangle"> Начинка:</label>
+                        <input type="text" id="input-form-up-rectangle" class="input-form-up-rectangle input center" placeholder="Введите значение...">
+                    </div>
+                    <div class="field-rectangle field">
+                        <label class="factor-rectangle text"> Форм-фактор:</label>
+                        <input type="text" id="formFactor-rectangle" class="input-form-midle-rectangle input center" value="Моноблок">
+                    </div>
+                    <div class="field-rectangle field">
+                        <label class="exodus-rectangle text"> Исход:</label>
+                        <input class="input-form-down-rectangle center" id="input-form-down-rectangle" value="Благоприятный, трансцендентальный" readonly>
+                        <button class="crops-rectangle buttonColor centerButton crops" type="text" id="crops"></button>
+                        <input class="select-file" type="file" id="select-file" accept="image/jpeg, image/png, image/jpg" multiple onchange= "transferData()">
+                        <button class="reset-rectangle buttonColor centerButton reset" id = "reset" type="reset " onclick="cleanRectangle()" ></button>
+                    </div>
+                    <div class="cake-jame-print-btn">
+                        <button class="cake feature text-size buttonColor" type="text">Добавить пирожок</button>
+                        <button class="jam feature text-size buttonColor" type="text">И джема еще</button>
+                        <button class="print feature buttonColor" type="text"></button>
+                    </div>
+                    </div>
+                </div>
+                    <hr class="line">
+            <footer>
+                <div class="basement" id="basement">
+                    <div class="basement-btn">
+                        <button class="man text-size buttonColor" type="button" onclick="transfer()">Передать человеку в красном</button>
+                        <!-- Link to open the modal -->
+                        <button class="cancel footer-btn" id="cancel" name="cancel" onclick="openModal()">Отмена
+                        </button>
+                        <button class="complete footer-btn" type="text">Выполнить</button>
+                    </div>
+                    <div class="corner">
+                    </div>
+                </div>
+            </footer>
+            </div>
+        </div>
+        <div class="modal-window" id="modal">
+            <div id="confirm" class="confirm">
+                <div class="modal-header">
+                    <a href="#" class="modal-text">
+                        <h3 class = "modal-title modal-text">Хорошенько подумайте</h3>
+                            <button class="close cap-btn modal-close-btn" type="text" id="close-modal" onclick="closeModal()"></button>
+                    </a>
+                </div>
+                <div class="modal-content">
+                    <p class="confirm-text">
+                        <a href="#" class="modal-text modal-main-text">Вы уверены, что хотите совершить это действие ?</a>
+                    </p>
+                    <div class="modal-btn">
+                            <button class="yes modal-btn-style" id="yes" onclick="resetRectangle()">Да</button>
+                            <button class="no modal-btn-style" id="no" onclick="closeModal()">Нет</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-square main">
+            <div class="cap-square cap">
+                <button class="close cap-btn" type="text"></button>
+                <button class="hide-content cap-btn "></button>
+                <span class="title-name-square title-span"><span class="letter text">Ч</span>еловек в красном</span>
+            </div>
+                <div class="content-square content" id="content-square">
+                    <div class="found-square found" id="found-square">
+                        <div class="found-field-square found-field">
+                            <div class="field-square field">
+                                <label class="filling-square text filling label-square"> Начинка:</label>
+                                <span class="filling-field-square text" id="filling-field-square"></span>
+                            </div>
+                            <div class="field-square field">
+                                <label class="factor-square text label-square" id="label-first"> Форм-фактор:</label>
+                                <span class="formFactor-field-square text" id="formFactor-field-square"></span>
+                            </div>
+                            <div class="field-rectangle field">
+                                <label class="exodus-square text label-square"> Исход:</label>
+                                <span class="exodus-field-square text" id="exodus-field-square">
+                            </div>
+                        </div>
+                            <div class="square-btn additional-div-footer">
+                                <button class="reset-square additional-div-btn" id = "reset-square" type="reset" onclick="cleanSquare()">Очистить</button>
+                            </div>
+                    </div>
+                </div>
+        </div>
+        <div class="overlay-main" id="overlay-main">
+            <div class="cap-overlay cap">
+                <button class="close cap-btn" type="text"></button>
+                <button class="hide-content cap-btn "></button>
+                <span class="title-name-overlay title-span"><span class="letter text">В</span>аши файлы</span>
+            </div>
+            <div class="content-overlay content" id="content-overlay">
+                <div class = "data-list">
+                    <p id = "data-file" class="data-file"></p>
+                </div>
+                <div class="overlay-btn additional-div-footer">
+                    <button class="reset-overlay additional-div-btn" id = "reset-overlay" type="reset" onclick="cleanOverlay()">Очистить</button>
+                </div>
+            </div>
+        </div>
+        <script src="jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="clear.js" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <!-- jQuery Modal -->
+        <link rel="stylesheet" href="jquery.modal.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    </body>
+</html>
