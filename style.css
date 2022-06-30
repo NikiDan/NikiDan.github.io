@@ -3,7 +3,7 @@ body{
     justify-content: center;
     align-items: center;
     background: #FFDEAD;
-    font-family: 'Tahoma', sans-serif;
+    font-family: 'Roboto', sans-serif;
     flex-direction: column;
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@ header{
     width: 100%;
 }
 .img{
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 .inf{
@@ -32,14 +32,15 @@ p{
 }
 
 .title-font{
-    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto', serif;
+    letter-spacing: 1.3px;
 }
 
 .gitHubImg{
     image-rendering: -moz-crisp-edges; /* Firefox */
     -ms-interpolation-mode: nearest-neighbor;  /* IE */
     image-rendering: crisp-edges;/* Стандартное свойство */
-    width: 6%;
+    width: 7vh;
 }
 
 .chapter{
@@ -67,4 +68,22 @@ p{
   min-height: 100px;
   min-width: 100px;
   border-radius: 5px;
+}
+@media screen and (max-width: 1200px){
+    .gitHubImg{
+        position: relative;
+        top: 20px;
+    }
+}
+@media screen and (max-width: 450px){
+    .title-font{
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .gitHubImg{
+        top: 25px;
+        right: 10px;
+    }
 }
