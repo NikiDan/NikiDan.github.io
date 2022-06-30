@@ -2,18 +2,62 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: #8454c8;
-    font-family: Roboto, sans-serif;
+    background: #FFDEAD;
+    font-family: 'Tahoma', sans-serif;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
-a {
+
+header{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.img{
+    margin-left: 40px;
+}
+
+.inf{
+    margin-right: 40px;
+}
+
+p{
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.title-font{
+    font-family: 'Crimson Text', serif;
+}
+
+.gitHubImg{
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    -ms-interpolation-mode: nearest-neighbor;  /* IE */
+    image-rendering: crisp-edges;/* Стандартное свойство */
+    width: 6%;
+}
+
+.chapter{
+    text-align: center;
+}
+
+.link-form {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   font-size: 25px;
-    margin: 10px;
+  margin: 10px;
 }
-form{
-  background: #000000;
+
+.link-form:hover{
+    color: #FFFFFF;
+}
+
+.main-form{
   padding: 10px;
   display: flex;
   justify-content: center;
