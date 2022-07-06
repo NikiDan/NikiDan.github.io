@@ -55,7 +55,7 @@ p{
 }
 
 .link-form:hover{
-    color: #FFFFFF;
+    color: #a49e9e;
 }
 
 .main-form{
@@ -69,6 +69,7 @@ p{
   min-width: 100px;
   border-radius: 5px;
 }
+
 @media screen and (max-width: 1200px){
     .gitHubImg{
         position: relative;
@@ -85,5 +86,15 @@ p{
     .gitHubImg{
         top: 25px;
         right: 10px;
+    }
+}
+@media screen and (max-width: 365px){
+    .title-font{
+        letter-spacing: 1.3px;
+    }
+}
+@media screen and (max-width: 290px){
+    .title-font{
+        letter-spacing: 0;
     }
 }
