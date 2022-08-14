@@ -6,7 +6,6 @@ body{
     font-family: 'Roboto', sans-serif;
     flex-direction: column;
     margin: 0;
-    padding-bottom: 20px;
 }
 
 header{
@@ -122,6 +121,10 @@ p{
     .title-font{
         letter-spacing: 0;
     }
+    .link-form{
+        font-size: 18px;
+    }
+
 }
 
 @media screen and (max-width: 400px){
@@ -153,5 +156,12 @@ p{
 @media screen and (max-width: 290px){
     .title-font{
         letter-spacing: 0;
+    }
+    .img{
+        position: relative;
+        bottom: 10px
+    }
+    .link-form{
+        font-size: 14px;
     }
 }
